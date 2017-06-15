@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <script>
+         function validateForm() {
+             var x = document.forms["registrationform"]["SchoolName"].value;
+             if (x == "") {
+                 alert("Please Enter The School Name First");
+                 return false;
+             }
+         
+         else if (x.length >25)
+         {
+         alert("name cannot be more than 25 characters");
+         return false;
+         
+         }      
+         else if (/[^a-zA-Z\  ]/.test( x ))
+         {
+         alert("name can only contain alphabates")
+         return false;
+         }
+         
+         	 var x = document.forms["registrationform"]["YOE"].value;
+             if (x == "") {
+                 alert("Please Enter The Year Of Establishment");
+         		return false;
+               } 
+         	  
+         
+         
+         
+         
+         
+         
+         
+         
+         	
+         	var x = document.forms["registrationform"]["StreetName"].value;
+             if (x == "") {
+                 alert("Please Enter The Street Name ");
+         		return false;
+               } 
+                else if (/[^a-zA-Z\  ]/.test( x ))
+         {
+         alert(" name can only contain alphabates")
+         return false;
+         }
+         	 
+          var x = document.forms["registrationform"]["CityName"].value;
+             if (x == "") {
+                 alert("Please Enter The City Name");
+         		return false;
+               } 
+                else if (/[^a-zA-Z\  ]/.test( x ))
+         {
+         alert(" name can only contains alphabates ")
+         return false;
+         }
+         	  var x = document.forms["registrationform"]["AdminFName"].value;
+             if (x == "") {
+                 alert("Please Enter The Admin First Name");
+         		return false;
+               } 
+         
+         else if (/[^a-zA-Z\  ]/.test( x ))
+         {
+         alert(" name can only contain alphabates")
+         return false;
+         }
+         
+         
+           var x = document.forms["registrationform"]["AdminLName"].value;
+             if (x == "") {
+                 alert("Please Enter The Admin Last Name");
+         		return false;
+               } 	  
+         else if (/[^a-zA-Z\  ]/.test( x ))
+         {
+         alert(" name can only contain alphabates ")
+         return false;
+         }
+         
+         	  var x = document.forms["registrationform"]["ContactPersonName"].value;
+             if (x == "") {
+                 alert("Please Enter The Contact Person Number");
+         		return false;
+               } 
+                var x = document.forms["registrationform"]["SchoolName2"].value;
+             if (x == "") {
+                 alert("Please Enter The Contact Person Name 2");
+         		return false;
+               }
+               var x = document["registrationform"]["phonenumber"].value;
+             if(x=="")
+               {
+             alert("please Enter the Contact Number");
+             document.form.phone.focus();
+              return false;
+               }
+             if(isNaN(x)){
+            alert("Enter the valid Mobile Number(Like : 9566137117)");
+            document.form.phone.focus();
+              return false;
+               }
+         	  var password = document.forms["registrationform"]["Password"].value;
+             if (password == "") {
+                 alert("Please Enter The Password");
+         		return false;
+               } 
+         else if(x.length<8)
+         {  
+         alert("Password must be at least 8 characters long.");  
+         return false;  
+         }  
+        var confirmPassword= document.forms["registrationform"]["ConfirmPassword"].value;
+             if (confirmPassword!=password)
+             {
+             	alert("PassWord doesn't match")
+             }
+         	  
+         	  var x = document.forms["registrationform"]["Email"].value;
+             if (x == "") {
+                 alert("Please Enter The Email Id");
+         		return false;
+               } 
+         	  
+         	}   
+         
+      </script> -->
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#" style="padding:0px;">logo
+               
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li>
+                        <a  href="home.html">HOME</a>
+
+                    </li>
+                    <li>
+                        <a  href="#about">ABOUT</a>
+
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a  href="newregister.html">REGISTER</a>
+                    </li>
+                    <li>
+                        <a href="Login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container" style="height: 100%;">
+         <div id="signupbox" style="margin-top:25px;" class="mainbox  col-md-12 ">
+            <div class="panel panel-info">
+               <div class="panel-heading">
+                  <div class="panel-title">School Registration Form</div>
+               </div>
+               <div class="panel-body" >
+                  <form id="registrationform" class="form-horizontal" role="form" onsubmit="return validateForm()">
+                     <div class="col-md-6">
+                        <div class="left-side-form">
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Name of the School" >School Name</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="SchoolName" 
+                                    placeholder="Name of the School">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Name of the Street" >Street </label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="StreetName" 
+                                    placeholder="Enter the Name of the Street">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Admin First Name" >Admin First Name</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="AdminFName" 
+                                    placeholder="First Name">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Name of Person" >Contact Person name</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="ContactPersonName" 
+                                    placeholder="Name of the Contact Person">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="PassWord" >Password</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="password" class="form-control" name="Password" 
+                                    placeholder="Password">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="EmailId" >Email Id</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="email" class="form-control" name="Email" 
+                                    placeholder="Enter Email Id">
+                              </div>
+                           </div>
+                           <br><br><br>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="right-side-form">
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Year of Establishment" >Year of Establishment</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="YOE" placeholder="DD/MM/YYYY">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Name of the City" >City </label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="CityName" 
+                                    placeholder="Enter the Name of the City">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Admin" >Admin Last Name</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="AdminLName" 
+                                    placeholder="Last Name">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Number of the Person" >Contact Person Number</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="text" class="form-control" name="SchoolName2" 
+                                    placeholder="Contact Number">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-4" control-label>
+                                 <label for="Confirm" >Confirm Password</label>
+                              </div>
+                              <div class="col-md-8 ">
+                                 <input type="password" class="form-control" name="ConfirmPassword" 
+                                    placeholder="Confirm Password">
+                              </div>
+                           </div>
+                           <br>
+                           <div class="row">
+                              <div class="col-md-12" control-label>
+                                 <label for="EmailId" ></label>
+                              </div>
+                           </div>
+                           <br><br><br>
+                           <div class="row">
+                              <!-- Button -->                                        
+                              <div class="col-md-6">
+                                 <button id="btn-reset" type="reset" class="btn btn-info"> Reset</button>
+                                 <span style="margin-left:8px;"></span>  
+                                 <button id="btn-Register" type="submit" name="submit"  class="btn btn-info"> 
+                                 Submit</button>
+                                 <span style="margin-left:8px;"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer style="bottom:0;width: 100%;height: 60px;left: 0;right: 0;">
+         <div class="copyright">
+            <div class="container">
+               <div class="col-md-6">
+                  <p>&copy 2017</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

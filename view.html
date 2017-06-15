@@ -1,0 +1,157 @@
+<html ng-app="myApp" >
+<head>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+</head>
+<body >
+	<div >
+	<!-- <div class="col-lg-10 text-left">
+      <h2> CLASSES</h2>
+    </div> -->
+	<div class="panel panel-info createclasspanel" style="margin-top: 5%">
+		<div class="panel-heading">
+          <div class="panel-title">create class</div>
+           </div>       
+    
+    <div class="panel-body">
+		<form class="form-horizantal" name="form" ng-submit="addRow()">
+			
+				<div class="col-md-6">
+					<div class="leftside-form">
+						<div class="row">
+							<div class="col-md-4">
+								<label for="class">Class</label>
+							</div>
+							<div class="col-md-8">
+							<input type="text" class="form-control" name="class" placeholder="class" ng-model="classname" ng-pattern="" required><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="class">Section</label>
+							</div>
+							<div class="col-md-8">
+							<input type="text" class="form-control" name="class" placeholder="section" ng-model="section" ng-pattern="" required><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="class">number of students</label>
+							</div>
+							<div class="col-md-8">
+							<input type="text" class="form-control" name="class" placeholder="no of students" ng-model="strength" ng-pattern="" required><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="class">syllabus</label>
+							</div>
+							<div clas="col-md-8">
+							
+						        <input type="checkbox" name="syllabus" value="state">state
+
+						        <input type="checkbox" name="syllabus" value="state">cbse
+						        
+					        </div>
+						</div>
+						</div>
+					</div>
+				
+				<div class="col-md-6">
+					<div class="rightside-form">
+						<div class="row">
+							
+							<div class="col-md-4">
+								<label for="class" control-label>Subjects</label>
+							</div>
+							<div class="col-md-8">
+							<select ng-model="selectsub" ng-options="subject for subject in class"></select>
+								
+							</div>
+						</div><br>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="section">Labs</label>
+							</div>
+							<div class="col-md-8">
+							<select ng-model="selectlabs" ng-options="lab for lab in labs"></select>
+							</div>
+						</div><br>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="class">Test</label>
+							</div>
+							<div class="col-md-8">
+							<select ng-model="selectlabs" ng-options="test for test in tests"></select>
+
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 text-center">
+						<button id="btn-reset" type="reset" class="btn btn-info button"> Reset</button>
+                                  
+	                    <button id="btn-Register" type="submit" name="submit"  class="btn btn-info button"> 
+	                     Submit</button>
+                                 
+					</div>
+				</div>
+
+</form>
+</div>
+</div>
+</div>
+<!-- <div class="table">
+<table class="table table-striped tabel-bordered">
+	<tr>
+		<th>class
+		</th>
+		<th>section
+		</th>
+		<th>no of students
+		</th>
+	</tr>
+	<tr ng-repeat="clas in classes">
+		<td>{{clas.classname}}
+		</td>
+		<td>{{clas.section}}
+		</td>
+		<td>{{clas.strength}}
+		</td>
+		</tr>
+</table>
+</div> -->
+
+
+
+<!-- <script>
+var app=angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+	$scope.class=["sub1","sub2","sub3","sub4","sub5","sub6"],
+	$scope.labs=["physics","chemistry","science"],
+	$scope.tests=["test1","test2","test3","test4"];
+
+	$scope.classes=[
+	{ 'classname':'1',
+                    	'section':a,
+                    	'strength': '60'}];
+
+
+	$scope.addRow = function(){
+		$scope.classes.push({'classname':$scope.classname,'section':$scope.section,'strength':$section.strength});
+		$scope.classname='';
+		$scope.section='';
+		$scope.strength='';
+	};
+
+});
+</script> -->
+<script src="form.js"></script>
+
+</body>
+</html>

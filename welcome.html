@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+	<style>
+	body{
+		background-image:url(images/slide2.jpg);
+	}
+	h1{
+		color:white;
+		text-align:center;
+		margin-top:20%;
+		font-size:50px;
+	}
+	</style>
+</head>
+<body class="welcome">
+<div ng-app="myapp" ng-controller="myctrl">
+
+<h1>WELCOME</h1>
+<h2>{{schoolname}}</h2>
+<script>
+var app=angular.module('myapp',[]);
+app.controller('myctrl',function($scope,&http))
+</body>
+
+</html>
